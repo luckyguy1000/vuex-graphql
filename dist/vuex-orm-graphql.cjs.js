@@ -15209,6 +15209,9 @@ var QueryBuilder = /** @class */ (function () {
             else if (field && field instanceof context.components.Boolean) {
                 return "Boolean";
             }
+            else if (field instanceof context.components.Uid) {
+                return "UUID";
+            }
             else {
                 if (typeof value === "number")
                     return "Int";

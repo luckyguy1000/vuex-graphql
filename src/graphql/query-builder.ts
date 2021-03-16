@@ -303,6 +303,8 @@ export default class QueryBuilder {
         return "Int";
       } else if (field && field instanceof context.components.Boolean) {
         return "Boolean";
+      } else if (field instanceof context.components.Uid) {
+        return "UUID";
       } else {
         if (typeof value === "number") return "Int";
         if (typeof value === "string") return "String";
