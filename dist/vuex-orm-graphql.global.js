@@ -15163,7 +15163,7 @@ var VuexORMGraphQLPlugin = (function (exports) {
                     if (!signature &&
                         filter &&
                         Context.getInstance().adapter.getArgumentMode() === exports.ArgumentMode.TYPE) {
-                        returnValue = "filter: { " + returnValue + " }";
+                        returnValue = "condition: { " + returnValue + " }";
                     }
                     returnValue = "(" + returnValue + ")";
                 }

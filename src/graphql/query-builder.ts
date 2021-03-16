@@ -251,7 +251,7 @@ export default class QueryBuilder {
           filter &&
           Context.getInstance().adapter.getArgumentMode() === ArgumentMode.TYPE
         ) {
-          returnValue = `filter: { ${returnValue} }`;
+          returnValue = `condition: { ${returnValue} }`;
         }
 
         returnValue = `(${returnValue})`;
